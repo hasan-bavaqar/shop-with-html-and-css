@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop store</title>
+    <link rel="stylesheet" href="fonts/fontiran.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/flexboxgrid.css">
+</head>
+
+<body>
+    <div class="modal_container" id="modeal_container">
+        <div class="container">
+            <div class="header-title">
+                <h3>ثبت نام کنید</h3>
+            </div>
+
+            <form class="form" id="form">
+                <div class="form-control">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+
+                    <label>نام کاربری</label>
+                    <input type="text" id="username" placeholder="مثلا : hasan bavaqar">
+
+
+                    <span>پیام خطا</span>
+                </div>
+                <div class="form-control">
+                    <i class="fa fa-envelope-open" aria-hidden="true"></i>
+
+                    <label>ایمیل</label>
+                    <input type="text" id="email" placeholder="مثلا : a@gmail.com">
+
+
+                    <span>پیام خطا</span>
+                </div>
+                <div class="form-control">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+
+                    <label>پسوورد</label>
+                    <input type="password" id="password" placeholder="پسوورد">
+
+
+                    <span>پیام خطا</span>
+                </div>
+                <div class="form-control">
+                    <i class="fa fa-repeat" aria-hidden="true"></i>
+
+                    <label>تکرار رمز</label>
+                    <input type="password" id="password2" placeholder="تکرار پسوورد">
+
+
+                    <span>پیام خطا</span>
+                </div>
+
+                <button>ثبت نام</button>
+                <button id="close">خروج</button>
+
+
+            </form>
+
+        </div>
+
+
+
+
+
+    </div>
+    </div>
+    <header>
+        <nav class="nav_header">
+            <div class="nav_header_right">
+                <div>
+                    <a href="#">
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="search">
+                    <button class="btn">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                    <input type="text" name="search input" class="input" placeholder="جستجو کنید ...">
+                </div>
+            </div>
+            <div class="nav_header_left">
+                <div id="open" class="div_nav_left">
+                    <a href="#">
+                        <i class="fa fa-user" aria-hidden="true">
+                            <span> ثبت نام / ورود</span>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <section class="slider">
+            <div class="slide">
+                <div class="item active" id="slide1">
+                    <img src="./image/1.png" alt="">
+
+                </div>
+                <div class="item " id="slide2">
+                    <img src="./image/2.jpg" alt="">
+
+                </div>
+                <div class="item " id="slide3">
+                    <img src="./image/13.png" alt="">
+                </div>
+            </div>
+            <div class="slide_btn">
+                <i onclick="setslide('slide1' , 1)" class="fa fa-circle" aria-hidden="true"></i>
+                <i onclick="setslide('slide2' , 2)" class="fa fa-circle" aria-hidden="true"></i>
+                <i onclick="setslide('slide3' , 3)" class="fa fa-circle" aria-hidden="true"></i>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="home_page_section">
+            <h3 class="h3-main-sec">پیشنهاد ویژه</h3>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="cards">
+                        <div class="img-cards">
+                            <img src="./image/hd.jpg" alt="">
+                            <span class="off-cards"> پیشنهاد ویژه</span>
+                            <div class="star-cards">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="title-cards">
+                            <span>هدفون بی سیم صورتی hd-123</span>
+                            <hr>
+                        </div>
+                        <div class="btn-cards">
+                            <div class="btn-right-cards">
+                                <span class="off-span">600هزار تومان </span>
+                                <span class="new-span">499هزار تومان</span>
+                            </div>
+                            <div class="btn-left-cards">
+                                <div class="btn_btn">
+                                    <a class="txt-btn-cards" href="">علاقه</a>
+                                    <a class="icon-btn-cards" href="">
+                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="btn_btn">
+                                    <a class="txt-btn-cards" href="">خرید</a>
+                                    <a class="icon-btn-cards" href="">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="cards">
+                        <div class="img-cards">
+                            <img src="./image/watch.jpg" alt="">
+                            <span class="off-cards"> پیشنهاد ویژه</span>
+                            <div class="star-cards">
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="title-cards">
+                            <span>ساعت هوشمند لمسی wh-456</span>
+                            <hr>
+                        </div>
+                        <div class="btn-cards">
+                            <div class="btn-right-cards">
+                                <span class="off-span">900هزار تومان </span>
+                                <span class="new-span">800هزار تومان</span>
+                            </div>
+                            <div class="btn-left-cards">
+                                <div class="btn_btn">
+                                    <a class="txt-btn-cards" href="">علاقه</a>
+                                    <a class="icon-btn-cards" href="">
+                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="btn_btn">
+                                    <a class="txt-btn-cards" href="">خرید</a>
+                                    <a class="icon-btn-cards" href="">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="cards">
+                        <div class="img-cards">
+                            <img src="./image/hard.jpg" alt="">
+                            <span class="off-cards"> پیشنهاد ویژه</span>
+                            <div class="star-cards">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="title-cards">
+                            <span>هارد اکسترنال 2Tr-789</span>
+                            <hr>
+                        </div>
+                        <div class="btn-cards">
+                            <div class="btn-right-cards">
+                                <span class="off-span">800هزار تومان </span>
+                                <span class="new-span">699هزار تومان</span>
+                            </div>
+                            <div class="btn-left-cards">
+                                <div class="btn_btn">
+                                    <a class="txt-btn-cards" href="">علاقه</a>
+                                    <a class="icon-btn-cards" href="">
+                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="btn_btn">
+                                    <a class="txt-btn-cards" href="">خرید</a>
+                                    <a class="icon-btn-cards" href="">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="cards">
+                        <div class="img-cards">
+                            <img src="./image/phone.jpeg" alt="">
+                            <span class="off-cards"> پیشنهاد ویژه</span>
+                            <div class="star-cards">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="title-cards">
+                            <span>سامسونگ گلگسی s21-012</span>
+                            <hr>
+                        </div>
+                        <div class="btn-cards">
+                            <div class="btn-right-cards">
+                                <span class="off-span">999هزار تومان </span>
+                                <span class="new-span">899هزار تومان</span>
+                            </div>
+                            <div class="btn-left-cards">
+                                <div class="btn_btn">
+                                    <a class="txt-btn-cards" href="">علاقه</a>
+                                    <a class="icon-btn-cards" href="">
+                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="btn_btn">
+                                    <a class="txt-btn-cards" href="">خرید</a>
+                                    <a class="icon-btn-cards" href="">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="shegeft">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="box-lg9">
+                        <span class="box-lg9-span">پیشنهاد شگفت انگیز</span>
+                        <div class="row">
+
+                            <div class="col-lg-4">
+                                <img src="./image/green.png" alt="">
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="lg8-shegeft-div1">
+                                    <span class="lg8-div1-span1">500 هزار تومان</span>
+                                    <span class="lg8-div1-span2">%50 تخفیف</span>
+                                </div>
+                                <div class="lg8-shegeft-div2">
+                                    هدست ایسوس مدل xt-258
+                                </div>
+                                <hr>
+                                <div class="lg8-shegeft-div3">
+                                    <span id="sec">59</span> :
+                                    <span id="min">59</span> :
+                                    <span id="hour">24</span>
+                                </div>
+                                <div class="lg8-shegeft-div4">
+
+                                    <i class="fa fa-hourglass-half" aria-hidden="true">
+                                        زمان باقی مانده تا پایان تخفیف
+                                    </i>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3">
+                    <div>
+                        <img src="./image/babner.png" alt="">
+                    </div>
+                </div>
+        </section>
+        <h3 class="mah">محصولات</h3>
+        <div class="main">
+            <div class="product-slide">
+                <div class="right-product" id="rightt-slide">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+
+                <section class="slide-product" id="sliderrr">
+                    <div class="flexnowrap">
+                        <div class="pro-10" id="thumbnail">
+                            <img src="./image/ps.jpg" alt="">
+                            <div>
+                                <span>پلی استیشن سونی 4</span>
+                                <hr>
+                            </div>
+                            <div class="pro-div-10">
+                                <span class="s-span">900 هزار تومان</span>
+                                <br>
+                                <a href="">
+                                    <span class="a-span">
+                                        افزودن به سبد خرید
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"> </i>
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="pro-10">
+                            <img src="./image/watch.jpg" alt="">
+                            <div>
+                                <span>اپل واچ</span>
+                                <hr>
+                            </div>
+                            <div class="pro-div-10">
+                                <span class="s-span">900 هزار تومان</span>
+                                <br>
+                                <a href="">
+                                    <span class="a-span">
+                                        افزودن به سبد خرید
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"> </i>
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="pro-10">
+                            <img src="./image/lab.jpg" alt="">
+                            <div>
+                                <span>لب تلپ ایسوس</span>
+                                <hr>
+                            </div>
+                            <div class="pro-div-10">
+                                <span class="s-span">900 هزار تومان</span>
+                                <br>
+                                <a href="">
+                                    <span class="a-span">
+                                        افزودن به سبد خرید
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"> </i>
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="pro-10">
+                            <img src="./image/vircglas.jpg" alt="">
+                            <div>
+                                <span>عینک مجازی</span>
+                                <hr>
+                            </div>
+                            <div class="pro-div-10">
+                                <span class="s-span">900 هزار تومان</span>
+                                <br>
+                                <a href="">
+                                    <span class="a-span">
+                                        افزودن به سبد خرید
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"> </i>
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="pro-10">
+                            <img src="./image/flsh.jpg" alt="">
+                            <div>
+                                <span>فلش 64 گیگابایت</span>
+                                <hr>
+                            </div>
+                            <div class="pro-div-10">
+                                <span class="s-span">900 هزار تومان</span>
+                                <br>
+                                <a href="">
+                                    <span class="a-span">
+                                        افزودن به سبد خرید
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"> </i>
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="pro-10">
+                            <img src="./image/phone.jpeg" alt="">
+                            <div>
+                                <span>سامسونگ اس 21</span>
+                                <hr>
+                            </div>
+                            <div class="pro-div-10">
+                                <span class="s-span">900 هزار تومان</span>
+                                <br>
+                                <a href="">
+                                    <span class="a-span">
+                                        افزودن به سبد خرید
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"> </i>
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="pro-10">
+                            <img src="./image/hd.jpg" alt="">
+                            <div>
+                                <span>هدفون صورتی</span>
+                                <hr>
+                            </div>
+                            <div class="pro-div-10">
+                                <span class="s-span">900 هزار تومان</span>
+                                <br>
+                                <a href="">
+                                    <span class="a-span">
+                                        افزودن به سبد خرید
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"> </i>
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="pro-10">
+                            <img src="./image/hard.jpg" alt="">
+                            <div>
+                                <span>هارد اکسترنال</span>
+                                <hr>
+                            </div>
+                            <div class="pro-div-10">
+                                <span class="s-span">900 هزار تومان</span>
+                                <br>
+                                <a href="">
+                                    <span class="a-span">
+                                        افزودن به سبد خرید
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"> </i>
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="pro-10">
+                            <img src="./image/cam.jpg" alt="">
+                            <div>
+                                <span>دوربین کانون</span>
+                                <hr>
+                            </div>
+                            <div class="pro-div-10">
+                                <span class="s-span">900 هزار تومان</span>
+                                <br>
+                                <a href="">
+                                    <span class="a-span">
+                                        افزودن به سبد خرید
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"> </i>
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="pro-10">
+                            <img src="./image/goshi.jpg" alt="">
+                            <div>
+                                <span>گوشی شیائومی</span>
+                                <hr>
+                            </div>
+                            <div class="pro-div-10">
+                                <span class="s-span">900 هزار تومان</span>
+                                <br>
+                                <a href="">
+                                    <span class="a-span">
+                                        افزودن به سبد خرید
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"> </i>
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="pro-10">
+                            <img src="./image/air.jpg" alt="">
+                            <div>
+                                <span>ایرپاد بلوتوثی</span>
+                                <hr>
+                            </div>
+                            <div class="pro-div-10">
+                                <span class="s-span">900 هزار تومان</span>
+                                <br>
+                                <a href="">
+                                    <span class="a-span">
+                                        افزودن به سبد خرید
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"> </i>
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+                <div class="left-product" id="leftt-slide">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
+
+            </div>
+            <footer class="fotter-shop">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="khadamat">
+                            <h2 class="h2-l4-1">خدمات مشتریان</h2>
+                            <hr>
+                            <div class="div1-l4-1">
+                                <a href="">
+                                    <i class="fa fa-question-circle-o" aria-hidden="true"></i> پاسخ به سوالات مشتریان
+                                </a>
+                                <a href="">
+                                    <i class="fa fa-handshake-o" aria-hidden="true"></i> رویه بازگزداندن کالا
+                                </a>
+                                <a href="">
+                                    <i class="fa fa-info-circle" aria-hidden="true"></i> شرایظ استفاده
+                                </a>
+                                <a href="">
+                                    <i class="fa fa-lock" aria-hidden="true"></i> حریم خصوصی
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2>
+                            ثبت نام در خبرنامه فروشگاه
+                        </h2>
+                        <hr>
+                        <div class="div1-l4-2">
+                            <span>با ثبت نام در خبرنامه اولین کسی باشید که از جدیدترین محصولات و جشنواره ها و فروش های ویژه مظلع می شود.</span>
+                        </div>
+                        <div class="div1-l4-3">
+                            <input type="text" name="" id="">
+                            <a href="">
+                            ثبت ایمیل 
+                            <i class="fa fa-share" aria-hidden="true"></i>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <h2>اطلاعات فروشگاه</h2>
+                        </div>
+                        <hr>
+                        <div class="div1-l4-4">
+                            <i class="fa fa-phone-square" aria-hidden="true">
+                            
+                        </i>
+                            <span>پشتیبانی : 09142261158</span>
+
+                        </div>
+                        <div class="div1-l4-5">
+                            <span>مارا در شبکه های اجتماعی دنبال کنید</span>
+                        </div>
+                        <div class="div1-l4-6">
+                            <a href="">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-telegram" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </footer>
+    </main>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
